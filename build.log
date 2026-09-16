@@ -1,0 +1,64 @@
+﻿
+[2026-09-17 00:27:06] KukaManager C# builder v6 started.
+[2026-09-17 00:27:06] Windows: Microsoft Windows NT 10.0.26200.0
+[2026-09-17 00:27:06] PowerShell: 5.1.26100.9168
+[2026-09-17 00:27:06] No .NET 10 SDK found. Installing a shared private SDK for Kuka builders.
+[2026-09-17 00:27:06] Downloading official .NET 10.0.401 SDK from Microsoft.
+[2026-09-17 00:27:12] Expanding .NET SDK.
+[2026-09-17 00:27:23] Using SDK: C:\Users\ISIL\AppData\Local\KukaManager\devtools\dotnet\dotnet.exe
+[2026-09-17 00:27:23] SDK version: 10.0.401
+[2026-09-17 00:27:23] Restoring dependencies.
+[2026-09-17 00:27:23] dotnet restore "C:\Users\ISIL\Desktop\KukaManager-1.3.0\src\KukaManager\KukaManager.csproj" --source https://api.nuget.org/v3/index.json
+  正在确定要还原的项目…
+  已还原 C:\Users\ISIL\Desktop\KukaManager-1.3.0\src\KukaManager\KukaManager.csproj (用时 21.24 秒)。
+[2026-09-17 00:27:45] dotnet restore C:\Users\ISIL\Desktop\KukaManager-1.3.0\tests\KukaManager.SmokeTests\KukaManager.SmokeTests.csproj --source https://api.nuget.org/v3/index.json
+  正在确定要还原的项目…
+  已还原 C:\Users\ISIL\Desktop\KukaManager-1.3.0\tests\KukaManager.SmokeTests\KukaManager.SmokeTests.csproj (用时 182 毫秒)。
+  1 个项目(共 2 个)是最新的，无法还原。
+[2026-09-17 00:27:45] Building main C# application.
+[2026-09-17 00:27:45] dotnet build "C:\Users\ISIL\Desktop\KukaManager-1.3.0\src\KukaManager\KukaManager.csproj" -c Release --no-restore
+  KukaManager -> C:\Users\ISIL\Desktop\KukaManager-1.3.0\src\KukaManager\bin\Release\net10.0-windows10.0.19041.0\KukaManager.dll
+
+已成功生成。
+    0 个警告
+    0 个错误
+
+已用时间 00:00:03.65
+[2026-09-17 00:27:49] Building migration smoke tests.
+[2026-09-17 00:27:49] dotnet build C:\Users\ISIL\Desktop\KukaManager-1.3.0\tests\KukaManager.SmokeTests\KukaManager.SmokeTests.csproj -c Release --no-restore
+  KukaManager -> C:\Users\ISIL\Desktop\KukaManager-1.3.0\src\KukaManager\bin\Release\net10.0-windows10.0.19041.0\KukaManager.dll
+  KukaManager.SmokeTests -> C:\Users\ISIL\Desktop\KukaManager-1.3.0\tests\KukaManager.SmokeTests\bin\Release\net10.0-windows10.0.19041.0\KukaManager.SmokeTests.dll
+
+已成功生成。
+    0 个警告
+    0 个错误
+
+已用时间 00:00:01.09
+[2026-09-17 00:27:50] Running migration smoke tests.
+[2026-09-17 00:27:50] dotnet run --project C:\Users\ISIL\Desktop\KukaManager-1.3.0\tests\KukaManager.SmokeTests\KukaManager.SmokeTests.csproj -c Release --no-build
+[PASS] modern WPF theme parses and loads
+[PASS] modern input, picker and grid templates instantiate and layout
+[PASS] new database seeds course catalog
+[PASS] admin login is case-insensitive and password-compatible
+[PASS] student CRUD
+[PASS] teacher/course catalog
+[PASS] enrollment and credit balance
+[PASS] class roster
+[PASS] schedule -> attendance -> automatic credit consumption
+[PASS] finance confirmed balance + post-anchor net change
+[PASS] finance account merge and balance recomputation
+[PASS] finance payment -> class history link
+[PASS] finance-linked student appears in class/week roster
+[PASS] SQLite integrity and foreign keys
+SMOKE PASS: 14 checks
+[2026-09-17 00:27:53] Restoring Windows x64 publish assets.
+[2026-09-17 00:27:53] dotnet restore "C:\Users\ISIL\Desktop\KukaManager-1.3.0\src\KukaManager\KukaManager.csproj" -r win-x64 --source https://api.nuget.org/v3/index.json
+  正在确定要还原的项目…
+  已还原 C:\Users\ISIL\Desktop\KukaManager-1.3.0\src\KukaManager\KukaManager.csproj (用时 4.35 秒)。
+[2026-09-17 00:27:58] Publishing Windows x64 self-contained app.
+[2026-09-17 00:27:58] dotnet publish "C:\Users\ISIL\Desktop\KukaManager-1.3.0\src\KukaManager\KukaManager.csproj" -c Release -r win-x64 --self-contained true --no-restore -p:PublishReadyToRun=false -p:DebugType=None -p:DebugSymbols=false -o C:\Users\ISIL\Desktop\KukaManager-1.3.0\dist\KukaManager
+  KukaManager -> C:\Users\ISIL\Desktop\KukaManager-1.3.0\src\KukaManager\bin\Release\net10.0-windows10.0.19041.0\win-x64\KukaManager.dll
+  KukaManager -> C:\Users\ISIL\Desktop\KukaManager-1.3.0\dist\KukaManager\
+[2026-09-17 00:28:00] Database backup created: C:\Users\ISIL\AppData\Local\KukaManager\backups\pre-csharp-20260917-002800.sqlite3
+[2026-09-17 00:28:00] SUCCESS: C:\Users\ISIL\Desktop\KukaManager-1.3.0\dist\KukaManager\KukaManager.exe
+[2026-09-17 00:28:04] Application launched successfully. PID=10268

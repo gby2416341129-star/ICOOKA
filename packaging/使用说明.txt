@@ -1,0 +1,12 @@
+酷咔管理系统 1.3.0 使用说明
+============================
+
+1. 解压整个压缩包，不能只单独复制 KukaManager.exe。
+2. 双击 KukaManager.exe 或“启动酷咔.cmd”。
+3. 首次运行创建管理员姓名、登录账号和至少 8 位密码。
+4. 正式数据库自动创建在：%LOCALAPPDATA%\KukaManager\kuka.sqlite3
+5. 已有旧版本时无需手工复制数据库，本版本会继续读取同一数据目录。
+6. 卸载请运行 Uninstall-KukaManager.cmd；卸载时可选择保留业务数据。
+
+系统要求：Windows 10 20H1 或更高版本 / Windows 11，64 位。
+本包为 self-contained x64 版本，不需要另外安装 .NET。
